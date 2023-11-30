@@ -130,7 +130,7 @@ body {
   max-height: 25px;
 }
 
-h1 {
+.h1 {
   text-align: center;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -389,7 +389,7 @@ button[type="submit"]:hover {
 
 /* VALIDATION */
 
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) {
   .nav_ul,
   .all_your_files_container,
   .get_early_text {
@@ -513,7 +513,7 @@ button[type="submit"]:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .footer_container {
     gap: 15%;
   }
