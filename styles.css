@@ -150,7 +150,6 @@ body {
 .all_your_files_input {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .all_your_files_input input {
@@ -173,6 +172,7 @@ body {
   border-radius: 3px;
   font-family: "Open Sans";
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .stay_productive_section {
@@ -193,7 +193,7 @@ body {
   font-size: 0.9rem;
 }
 
-.see_how {
+/* .see_how {
   text-align: center;
   display: flex;
   align-items: center;
@@ -207,17 +207,48 @@ body {
 .arrow-icon {
   content: url(images/icon-arrow.svg);
   height: 0.87rem;
+} */
+
+.see_how {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: var(--Moderate-Cyan);
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.see_how::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--Moderate-Cyan);
+}
+
+.arrow-icon {
+  display: inline-block;
+  vertical-align: middle;
+  content: url(images/icon-arrow.svg);
+  height: 0.87rem;
+  margin-left: 5px;
 }
 
 .container_testimonial {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(128, 128, 128, 0.423);
   gap: 10px;
-  margin: 20px 40px;
+  margin: 50px 20px;
+}
+
+.testimonial-quote {
+  margin: 0;
 }
 
 .container_testimonial > img {
@@ -240,10 +271,10 @@ body {
 
 .container_testimonial p {
   font-size: 0.7rem;
-  margin: 0;
+  margin: 10px 0;
   color: var(--Desaturated-Blue);
-  font-family: Raleway;
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 400;
 }
 
 .container_testimonial_name h3,
@@ -293,6 +324,10 @@ body {
   border: none;
 }
 
+.all_your_files_input input + .all_your_files_input button {
+  margin: 20px;
+}
+
 .get_subcontainer_input button {
   background-color: var(--Bright-Blue);
   color: white;
@@ -340,7 +375,7 @@ body {
 .logo_email_phone,
 .about_us,
 .contact_us {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .socials {
@@ -363,26 +398,39 @@ body {
 
 /* ACTIVE STATE */
 
-label {
-  display: block;
-  margin-bottom: 10px;
+.see_how:hover,
+.arrow-icon:hover {
+  color: lightgreen;
 }
-
-input[type="email"]:focus {
-  border-color: red; /* Change this to the desired color */
-  outline: none; /* This removes the default blue outline on focus in some browsers */
-}
-
-.footer_container a:hover {
-  color: var(--Bright-Blue);
+.see_how:hover::after {
+  background: lightgreen;
 }
 
 .see_how:hover {
   color: lightgreen;
 }
 
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"]:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+.footer_container a:hover {
+  color: var(--Bright-Blue);
+}
+
 button[type="submit"]:hover {
   background-color: hsla(224, 93%, 58%, 0.7);
+}
+
+.fa:hover {
+  border-color: var(--Bright-Blue);
+  color: var(--Bright-Blue) !important;
 }
 
 /* ACTIVE STATE */
@@ -443,6 +491,7 @@ button[type="submit"]:hover {
 
   .all_your_files_input button {
     flex: 1;
+    margin: 0 20px 0 15px;
   }
 
   .stay_productive_section {
