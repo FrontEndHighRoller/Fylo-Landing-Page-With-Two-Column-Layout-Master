@@ -33,12 +33,13 @@
         color: hsl(228, 45%, 44%);
       }
     </style> -->
+
   </head>
 
   <body>
-    <main>
+    
       <header>
-        <nav>
+        <nav aria-label="Primary Navigation">
           <ul class="nav_ul">
             <img src="images/logo.svg" alt="fylo logo" />
             <li><a href="#">Features</a></li>
@@ -48,41 +49,34 @@
         </nav>
       </header>
 
+      <main>
+
       <!-- all your files container START --------------------------------------------------------------------------------->
       <div class="all_your_files_container">
         <div class="all_files_picturecontainer_desktop">
           <img src="images/illustration-1.svg" alt="" />
         </div>
         <div class="all_files_textcontainer_desktop">
-          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <h1 class="h1">
+            All your files in one secure location, accessible anywhere.
+          </h1>
           <p>
             Fylo stores your most important files in one secure location. Access
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <div class="all_your_files_input">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-            <button class="button_get_started" type="submit">
-              Get Started
-            </button>
-          </div>
+
+          <form class="all_your_files_input" action="your_form_action_url" method="post">
+  
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <button class="button_get_started" type="submit">
+            Get Started
+          </button>
+      </form>
+
         </div>
       </div>
-
-      <!-- <picture>
-        <source
-          media="(min-width: 90rem)"
-          desktop
-          srcset="images/bg-curve-desktop.svg"
-        />
-        <img src="images/bg-curve-mobile.svg" alt="" style="width: auto" />
-      </picture> -->
 
       <!-- all your files container END --------------------------------------------------------------------------------->
 
@@ -109,22 +103,25 @@
           ></a>
 
           <!-- testimonial container start-->
-          <div class="container_testimonial">
-            <img src="images/icon-quotes.svg" alt="" />
-            <p>
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </p>
 
-            <div class="container_testimonial_image">
-              <img src="images/avatar-testimonial.jpg" alt="" />
-              <div class="container_testimonial_name">
+          <figure class="container_testimonial">
+            <blockquote class="testimonial-quote">
+              <img src="images/icon-quotes.svg" alt="Quotes icon" class="quote-icon" />
+              <p>
+                Fylo has improved our team productivity by an order of magnitude. Since
+                making the switch our team has become a well-oiled collaboration machine.
+              </p>
+            </blockquote>
+          
+            <figcaption class="container_testimonial_image">
+                <img src="images/avatar-testimonial.jpg" alt="Author's avatar" />
+               <div class="container_testimonial_name">
                 <h3>Kyle Burton</h3>
                 <p>Founder & CEO, Huddle</p>
               </div>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
+
         </div>
       </div>
 
@@ -144,19 +141,16 @@
           </p>
         </div>
 
-        <div class="get_subcontainer_input">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="email@example.com"
-            required
-          />
-          <button type="submit">Get Started For Free</button>
-        </div>
-      </div>
 
-      <!--get early access section finish -->
+        <form class="get_subcontainer_input" action="your_form_action_url" method="post">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        <button type="submit">Get Started For Free</button>
+        </form>
+
+
+     <!--get early access section finish -->
+
     </main>
     <footer>
       <div class="footer_container">
@@ -183,16 +177,15 @@
               </g>
             </g>
           </svg>
-          <nav class="logo_email_phone">
-            <ul>
-              <li><span class="phone_icon"></span>Phone: +1-543-123-4567</li>
-              <li><span class="email_icon"></span>example@fylo.com</li>
-            </ul>
-          </nav>
+
+          <div class="logo_email_phone">
+              <p><span class="phone_icon"></span>Phone: +1-543-123-4567</p>
+              <p><span class="email_icon"></span>example@fylo.com</p>
+          </div>
         </div>
 
         <div class="about_us">
-          <nav>
+          <nav aria-label="Secondary Navigation">
             <ul>
               <li>About Us</li>
               <li><a href="#">Jobs</a></li>
@@ -213,13 +206,13 @@
         </div>
 
         <div class="socials">
-          <a href="#"
+          <a href="https://www.facebook.com" target="_blank"
             ><i class="fa fa-facebook-f fa-2x" style="color: #ffffff"></i
           ></a>
-          <a href="#"
+          <a href="https://www.twitter.com" target="_blank"
             ><i class="fa fa-twitter fa-2x" style="color: #ffffff"></i
           ></a>
-          <a href="#"
+          <a href="https://www.instagram.com" target="_blank"
             ><i class="fa fa-instagram fa-2x" style="color: #ffffff"></i
           ></a>
         </div>
@@ -229,6 +222,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p> -->
+
     </footer>
   </body>
 </html>
