@@ -66,10 +66,10 @@
             and co-workers.
           </p>
 
-          <form class="all_your_files_input" action="your_form_action_url" method="post">
+          <form class="all_your_files_input" action="" method="post">
   
-          <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <label for="email-first"></label>
+          <input type="email" id="email-first" name="email" placeholder="Enter your email" required>
           <button class="button_get_started" type="submit">
             Get Started
           </button>
@@ -81,6 +81,12 @@
       <!-- all your files container END --------------------------------------------------------------------------------->
 
       <!-- stay productive container start --------------------------------------------------------------------------------->
+      <picture class="background_image">
+        <source media="(min-width: 376px)" srcset="images/bg-curve-desktop.svg">
+    
+        <img src="images/bg-curve-mobile.svg" alt="Background Image">
+      </picture>
+     
       <div class="stay_productive_section">
         <div class="stay_productive_first_subcontainer">
           <img src="images/illustration-2.svg" alt="" />
@@ -142,11 +148,12 @@
         </div>
 
 
-        <form class="get_subcontainer_input" action="your_form_action_url" method="post">
-        <label for="email"></label>
-        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        <form class="get_subcontainer_input" action="" method="post">
+        <label for="email-second"></label>
+        <input type="email" id="email-second" name="email" placeholder="email@example.com" required>
         <button type="submit">Get Started For Free</button>
-        </form>
+        <div id="email-error" class="error-message" aria-live="polite"></div>
+      </form>
 
 
      <!--get early access section finish -->
@@ -162,7 +169,7 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
             <defs><path id="a" d="M.014.03h93.96v48.29H.015z" /></defs>
-            <g fill="#ffffff" ; fill-rule="evenodd">
+            <g fill="#ffffff" fill-rule="evenodd">
               <path
                 d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z"
                 fill="#ffffff"
@@ -207,13 +214,13 @@
 
         <div class="socials">
           <a href="https://www.facebook.com" target="_blank"
-            ><i class="fa fa-facebook-f fa-2x" style="color: #ffffff"></i
+            ><i class="fa fa-facebook" style="color: #ffffff"></i
           ></a>
           <a href="https://www.twitter.com" target="_blank"
-            ><i class="fa fa-twitter fa-2x" style="color: #ffffff"></i
+            ><i class="fa fa-twitter" style="color: #ffffff"></i
           ></a>
           <a href="https://www.instagram.com" target="_blank"
-            ><i class="fa fa-instagram fa-2x" style="color: #ffffff"></i
+            ><i class="fa fa-instagram" style="color: #ffffff"></i
           ></a>
         </div>
       </div>

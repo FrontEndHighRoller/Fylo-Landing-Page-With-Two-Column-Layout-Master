@@ -132,6 +132,7 @@ body {
 
 .h1 {
   text-align: center;
+  margin: 20px;
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--Very-Dark-Blue);
@@ -143,7 +144,7 @@ body {
 
 .all_your_files_container p {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px;
   color: var(--Very-Dark-Blue);
 }
 
@@ -175,10 +176,13 @@ body {
   margin-top: 15px;
 }
 
+.background_image {
+  margin-top: 80px;
+}
+
 .stay_productive_section {
-  background-image: url(images/bg-curve-mobile.svg);
-  background-size: cover;
-  padding: 150px 25px 80px 25px;
+  padding: 41px 25px 21px 25px;
+  background-color: #f8f8fe;
 }
 
 .stay_productive_section h2 {
@@ -298,14 +302,13 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 40px 20px;
 }
 
 .get_subcontainer_input {
   display: flex;
   flex-direction: column;
-  margin: 20px 40px;
+  margin: 0 48px;
   gap: 10px;
 }
 
@@ -314,8 +317,8 @@ body {
 }
 
 .get_early_text p {
-  font-size: 0.8rem;
-  margin: 0 25px;
+  font-size: 0.9rem;
+  margin: 20px 27px 0 27px;
 }
 
 .get_subcontainer_input input {
@@ -345,13 +348,22 @@ body {
   font-size: 0.8rem;
 }
 
+/* ERROR*/
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* ERROR*/
+
 .footer_container {
   background-color: var(--Very-Dark-Blue);
   color: white;
   font-family: Raleway;
   display: flex;
   flex-direction: column;
-  padding: 50px 25px;
+  padding: 50px 41px;
 }
 
 .phone_icon {
@@ -389,8 +401,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 31px;
+  height: 30px;
   font-size: 1em;
   border: 2px solid white;
   border-radius: 50%;
