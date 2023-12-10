@@ -203,22 +203,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* .see_how {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 0.31rem;
-  text-decoration: underline;
-  color: var(--Moderate-Cyan);
-  margin-top: 15px;
-}
-
-.arrow-icon {
-  content: url(images/icon-arrow.svg);
-  height: 0.87rem;
-} */
-
 .see_how {
   text-align: center;
   display: inline-block;
