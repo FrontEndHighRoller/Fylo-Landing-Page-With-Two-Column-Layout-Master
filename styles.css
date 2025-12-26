@@ -186,6 +186,12 @@ body {
   margin-top: 80px;
 }
 
+.background_image img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 .stay_productive_section {
   padding: 41px 25px 21px 25px;
   background-color: #f8f8fe;
@@ -569,3 +575,4 @@ button[type="submit"]:hover {
     gap: 15%;
   }
 }
+
