@@ -129,6 +129,7 @@ body {
 .header_navigation_right {
   display: flex;
   gap: 20px;
+  padding: 0;
 }
 
 .header_image {
@@ -575,4 +576,5 @@ button[type="submit"]:hover {
     gap: 15%;
   }
 }
+
 
