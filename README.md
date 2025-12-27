@@ -2,7 +2,6 @@
 
 > A modern, responsive landing page built as part of a Frontend Mentor challenge, focused on clean layout structure, responsive images, and performance-friendly design using only HTML and CSS.
 
-📸 Preview  
 ![img](screen-1.png)
 ![img](screen-2.png)
 ![img](screen-3.png)
