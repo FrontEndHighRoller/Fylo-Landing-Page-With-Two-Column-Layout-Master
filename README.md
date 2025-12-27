@@ -4,6 +4,8 @@
 
 📸 Preview  
 ![img](screen-1.png)
+![img](screen-2.png)
+![img](screen-3.png)
 
 ---
 
